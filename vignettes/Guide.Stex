@@ -14,10 +14,10 @@ library("GPArotation")
 \end{Scode}
 
 The most complete reference for the software is:
-Bernaards, C.A. and Jennrich, R.I. (in press) Gradient Projection Algorithms 
+Bernaards, C.A. and Jennrich, R.I. (2005) Gradient Projection Algorithms 
 and Software for Arbitrary Rotation Criteria in Factor Analysis. Educational 
 and Psychological Measurement. Addition material is also available at 
-<http://www.stat.ucla.edu/research/gpa>.
+<https://optimizer.r-forge.r-project.org/GPArotation\_www/indexOriginal.html>.
 
 Rotations are computed using the Gradient Projection Algorithm code, which can
 be called directly. Examples of this are available in the help pages for 

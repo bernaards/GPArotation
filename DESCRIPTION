@@ -7,13 +7,9 @@ Imports: stats
 LazyLoad: yes
 License: GPL (>= 2) | file LICENSE
 Authors@R: c(
-	person("Coen", "Bernaards", email = "coen.bernaards@gmail.com", roles = c("aut","cre")),
-	person("Paul, "Gilbert", email = "pgilbert.ttv9z@ncf.ca", roles = "aut"),
-	person("Robert", "Jennrich", roles = "aut")
+	person("Coen", "Bernaards", email = "coen.bernaards@gmail.com", role = c("aut","cre")),
+	person("Paul", "Gilbert", email = "pgilbert.ttv9z@ncf.ca", role = "aut"),
+	person("Robert", "Jennrich", role = "aut")
 	)
 Maintainer: Coen Bernaards <coen.bernaards@gmail.com>
 URL: https://optimizer.r-forge.r-project.org/GPArotation_www/
-NeedsCompilation: no
-Packaged: 2022-04-03 03:47:09 UTC; paul
-Repository: CRAN
-Date/Publication: 2022-04-16 12:42:28 UTC
