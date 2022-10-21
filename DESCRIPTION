@@ -1,5 +1,5 @@
 Package: GPArotation
-Version: 2022.10-2
+Version: 2022.10-1.01
 Title: GPA Factor Rotation
 Description: Gradient Projection Algorithm Rotation for Factor Analysis. See '?GPArotation.Intro' for more details.
 Depends: R (>= 2.0.0)
