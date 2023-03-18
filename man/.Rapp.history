@@ -1,1 +1,133 @@
 q()
+??GPArotation
+q()
+library(GPArotation)
+GPArotation
+??GPArotation
+sessionInfo()
+q()
+library(GPArotation)
+factanal(factors=3, covmat=ability.cov, rotation = "quartimax")
+z <- factanal(factors=3, covmat=ability.cov, rotation = "quartimax")
+z$rotmat
+quartimax(z$loadings)
+quartimax(z$loadings)$Th
+y <- factanal(factors=3, covmat=ability.cov, rotation = "none")
+quartimax(y$loadings)$Th
+yq <- quartimax(y$loadings)
+yq$loadings %*% yq$Th
+y$loadings
+yq$loadings %*% solve(yq$Th)
+z
+z$loadings %*% solve(z$Th)
+z$loadings %*% solve(z$rotmat)
+z$loadings %*% t(z$rotmat)
+y <- factanal(factors=3, covmat=ability.cov, rotation = "none", normalization = FALSE)
+z <- factanal(factors=3, covmat=ability.cov, rotation = "none", normalization = FALSE)
+z$loadings %*% t(z$rotmat)
+z
+z$rotmat
+z <- factanal(factors=3, covmat=ability.cov, rotation = "quartimax", normalization = FALSE)
+z$loadings %*% t(z$rotmat)
+y <- factanal(factors=3, covmat=ability.cov, rotation = "none")#
+y.quart <- quartimax(y$loadings)#
+y.quart$loadings %*% solve(yq$Th)#
+y.quart$loadings %*% solve(y.quart$Th) - y$loadings
+y
+y.quart <- quartimax(y$loadings)
+y.quart$loadings %*% solve(yq$Th)
+y.quart$loadings %*% solve(y.quart$Th) - unclass(y$loadings)
+z <- factanal(factors=3, covmat=ability.cov, rotation = "quartimax")
+z <- factanal(factors=3, covmat=ability.cov, normalization = FALSE, rotation = "quartimax")
+z
+z <- factanal(factors=3, covmat=ability.cov, rotation = "quartimax")
+z
+z <- factanal(factors=3, covmat=ability.cov, rotation = "quartimax", control = rotate(list(normalization = TRUE)))
+z <- factanal(factors=3, covmat=ability.cov, rotation = "quartimax", control = list(rotate(list(normalization = TRUE))))
+z <- factanal(factors=3, covmat=ability.cov, rotation = "quartimax", control = list(rotate=list(normalization = TRUE)))
+z <- factanal(factors=3, covmat=ability.cov, rotation = "quartimax", control = list(rotate=list(normalize = TRUE)))
+z
+z$loadings %*% solve(z$rotmat)
+z$loadings %*% t(z$rotmat)
+z$loadings %*% (z$rotmat)
+unclass(y$loadings)
+y$loadings %*% (z$rotmat)
+y$loadings %*% solve(z$rotmat)
+y$loadings %*% t(z$rotmat)
+z$loadings
+y
+y <- factanal(factors=3, covmat=ability.cov, rotation = "none")
+y
+y <- factanal(factors=3, covmat=ability.cov, rotation = "none", normalize = FALSE)
+y
+y$loadings
+z
+z$loadings %*% z$Th
+z$loadings %*% z$rotmat
+z$loadings %*% t(z$rotmat)
+z$loadings %*% solve(z$rotmat)
+z$rotmat
+y$Th
+y.quart$Th
+solve(y.quart$Th)
+t(solve(y.quart$Th))
+z$loadings %*% t(solve(z$rotmat))
+z$loadings %*% t(t(solve(z$rotmat)))
+y$loadings %*% t(t(solve(z$rotmat)))
+y$loadings %*% (t(solve(z$rotmat)))
+y$loadings %*% (z$rotmat)
+y$loadings %*% t(z$rotmat)
+y.quart
+y.quart$loadings %*% solve(yq$Th)
+y.quart$loadings %*% t(yq$Th)
+y.quart$loadings %*% (y.quart$Th)
+y.quart$loadings %*% t(y.quart$Th)
+y.quart$loadings %*% t(y.quart$Th) - unclass(y$loadings)
+y.obli <- oblimin(y$loadings)#
+y.obli$loadings %*% t(y.obli$Th)#
+y.obli$loadings %*% t(y.obli$Th) - unclass(y$loadings)
+max(ab(y.obli$loadings %*% t(y.obli$Th) - unclass(y$loadings)))
+max(abs(y.obli$loadings %*% t(y.obli$Th) - unclass(y$loadings)))
+max(abs(y.quart$loadings %*% t(y.quart$Th) - unclass(y$loadings)))
+y.obli
+factanal(factors=3, covmat=ability.cov, normalization = FALSE, rotation = "oblimin")
+q()
+library(GPArotation)
+y <- factanal(factors=3, covmat=ability.cov, rotation = "none")
+y.obli <- oblimin(y$loadings, normalize=TRUE)#
+y.obli$loadings %*% t(y.obli$Th)#
+max(abs(y.obli$loadings %*% t(y.obli$Th) - unclass(y$loadings)))
+y.obli <- oblimin(y$loadings)#
+y.obli$loadings %*% t(y.obli$Th)#
+max(abs(y.obli$loadings %*% t(y.obli$Th) - unclass(y$loadings)))
+y.obli <- oblimin(y$loadings, normalize=TRUE, randomStarts=15)#
+y.obli$loadings %*% t(y.obli$Th)#
+max(abs(y.obli$loadings %*% t(y.obli$Th) - unclass(y$loadings)))
+y.obli <- oblimin(y$loadings, randomStarts=15)#
+y.obli$loadings %*% t(y.obli$Th)#
+max(abs(y.obli$loadings %*% t(y.obli$Th) - unclass(y$loadings)))
+y.obli <- oblimin(y$loadings, normalize=TRUE, randomStarts=15)#
+y.obli$loadings %*% t(y.obli$Th)#
+max(abs(y.obli$loadings %*% t(y.obli$Th) - unclass(y$loadings)))
+y.obli <- oblimin(y$loadings, randomStarts=15)#
+y.obli$loadings %*% t(y.obli$Th)#
+max(abs(y.obli$loadings %*% t(y.obli$Th) - unclass(y$loadings)))
+y.obli <- oblimin(y$loadings, normalize=TRUE, randomStarts=15)#
+y.obli$loadings %*% t(y.obli$Th)#
+max(abs(y.obli$loadings %*% t(y.obli$Th) - unclass(y$loadings)))
+q()
+y <- factanal(factors=3, covmat=ability.cov, rotation = "none")#
+  y.quart <- quartimax(y$loadings)#
+  max(abs(y.quart$loadings %*% t(y.quart$Th) - unclass(y$loadings)))#
+  y.obli <- oblimin(y$loadings, normalize=TRUE, randomStarts=15)#
+  max(abs(y.obli$loadings %*% t(y.obli$Th) - unclass(y$loadings)))
+q()
+install.packages("/Users/coen/Documents/Personal Research/cran/GPArotation_2023.1-1.tar.gz")#
+library(GPArotation)
+?GPArotation
+q()
+install.packages("/Users/coen/Documents/Personal Research/cran/GPArotation_2023.1-1.tar.gz")#
+library(GPArotation)
+?GPArotation
+q()
+q()

@@ -1,0 +1,73 @@
+install.packages("/Users/coen/Documents/Personal Research/cran/GPArotation_2023.1-1.tar.gz")#
+library(GPArotation)
+?GPArotation
+?GPArotation
+Random.Start <- function(k,orthogonal=TRUE){#
+	   # routine for generating orthogonal or oblique random matrix#
+	   mat <- matrix(rnorm(k*k),k)#
+	   if (orthogonal){#
+ 	      ans <- qr.Q(qr(mat))#
+ 	   }#
+ 	   else{#
+	      ans <- mat %*% diag(sqrt(1/diag(t(mat) %*% mat)))#
+ 	   }#
+	   ans#
+	}#
+	data("Thurstone", package="GPArotation")#
+	simplimax(box26,Tmat = Random.Start(3, TRUE))#
+	simplimax(box26,Tmat = Random.Start(3, FALSE))#
+#
+	# covariance matrix is Phi = t(Th) %*% Th#
+	rm <- Random.Start(3, FALSE)#
+	t(rm) %*% rm # covariance matrix because oblique rm#
+	rm <- Random.Start(3, TRUE)#
+	t(rm) %*% rm # identity matrix because orthogonal rm
+mat <- matrix(rnorm(9),3)
+mat
+diag(sqrt(1/diag(t(mat) \%*\% mat)))
+diag(sqrt(1/diag(t(mat) %*% mat)))
+mat %*% diag(sqrt(1/diag(t(mat) %*% mat)))
+diag(sqrt(1/diag(t(mat) )))
+mat
+sqrt(t(mat))
+sqrt(1/t(mat))
+mat %*% diag(sqrt(1/diag(t(mat) %*% mat)))
+sqrt(1/diag(t(mat)
+1/diag(t(mat)
+)
+ans <- mat %*% diag(sqrt(1/diag(t(mat) %*% mat)))
+ans
+1/diag(t(mat) %*% mat
+)
+mat
+diag(sqrt(1/diag(t(mat) %*% mat)))
+(sqrt(1/diag(t(mat) %*% mat)))
+sqrt(1/diag(t(mat) %*% mat))
+(1/diag(t(mat) %*% mat))
+diag(mat)
+diag(t(mat))
+(1/diag(t(mat %*% mat)))
+sqrt(1/(t(mat) %*% mat))
+sqrt(1/diag(mat %*% mat))
+sqrt(1/(t(mat) %*% mat))
+sqrt(1/diag(t(mat) %*% mat))
+sqrt(1/diag(t(mat) %*% mat))
+sqrt(1/diag(t(mat) %*% mat))
+(1/diag(t(mat) %*% mat))
+(1/diag(t(mat) )
+)
+(1/diag(t(mat) %*% mat))
+(1/diag((mat) %*% mat))
+(1/diag(mat %*% mat))
+crossprod(mat)
+diag(crossprod(mat))
+1/diag(crossprod(mat))
+sqrt(1/diag(crossprod(mat)))
+mat %*% diag(sqrt(1/diag(crossprod(mat))))
+mat %*% diag(sqrt(1/diag(t(mat) %*% mat)))
+mat %*% diag(1/sqrt(diag(crossprod(mat))))
+q
+detach("package:GPArotation", unload=TRUE)#
+install.packages("/Users/coen/Documents/Personal Research/cran/GPArotation_2023.1-1.tar.gz")#
+library(GPArotation)
+q()
