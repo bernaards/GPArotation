@@ -4,7 +4,7 @@ Known problems
 	algorithm gets stuck and does not improve (so does not converge). The
 	workaround is to restart with a very slightly perturbed starting point.       
 
-Changes in GPArotation version 2023.1-1
+Changes in GPArotation version 2023.3-1
 
    o    January 2023: GPArotation turns 18 years old.
    o    Included GPFRSorth and GPFRSoblq functions, and set rotation routines
@@ -13,7 +13,8 @@ Changes in GPArotation version 2023.1-1
    o    Included equamax, parsimax and varimin (added vgQ.varimin).
    o    Cleaned up print.GPArotation to account for random starts.
    o    Cleaned up vgQ.bifactor.
-   o    New vignette on derivative-free GPA: the GPArotateDF package.
+   o    Expanded vignette GPAguide.
+   o    Added vignette on derivative-free GPA: the GPArotateDF package.
 
 Changes in GPArotation version 2022.10-1
 
