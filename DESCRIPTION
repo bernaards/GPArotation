@@ -1,5 +1,5 @@
 Package: GPArotation
-Version: 2023.8-1
+Version: 2023.11-1
 Title: Gradient Projection Factor Rotation
 Authors@R: c( 
 	person("Coen", "Bernaards", email = "cab.gparotation@gmail.com", role = c("aut","cre")),
